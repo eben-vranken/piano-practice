@@ -1,0 +1,279 @@
+.progressions {
+  width: 100%;
+}
+
+.progressions-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.progressions-header h2 {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 300;
+}
+
+.add-progression-button {
+  padding: 12px 24px;
+  font-size: 12px;
+  font-weight: 400;
+  border: 1px solid #333;
+  background: transparent;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: inherit;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.add-progression-button:hover {
+  background: #ffffff;
+  color: #000000;
+  border-color: #ffffff;
+}
+
+.progression-info {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 40px 0;
+  border-top: 1px solid #2a2a2a;
+  border-bottom: 1px solid #2a2a2a;
+}
+
+.progression-number {
+  font-size: 12px;
+  color: #666;
+  font-weight: 300;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.progression-description {
+  font-size: 11px;
+  color: #666;
+  margin-bottom: 15px;
+  font-style: italic;
+  letter-spacing: 0.5px;
+}
+
+.progression-key {
+  font-size: 14px;
+  color: #999;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.progression-key strong {
+  color: #ffffff;
+  font-weight: 300;
+}
+
+.chord-sequence {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.chord-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.chord-name {
+  font-size: 50px;
+  font-weight: 100;
+  color: #ffffff;
+  min-width: 60px;
+  text-align: center;
+  letter-spacing: 3px;
+  transition: all 0.3s ease;
+}
+
+.chord-numeral {
+  font-size: 11px;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.chord-arrow {
+  font-size: 24px;
+  color: #444;
+}
+
+.progress-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.progress-dot {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #333;
+  background: #0a0a0a;
+  transition: all 0.3s ease;
+}
+
+.progress-dot.active {
+  background: #ffffff;
+}
+
+.progress-dot.completed {
+  background: #666;
+}
+
+.timer-section {
+  margin-bottom: 30px;
+}
+
+.timer-display {
+  font-size: 48px;
+  font-weight: 100;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 20px;
+  letter-spacing: 4px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 3px;
+  background: #1a1a1a;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #ffffff;
+  width: 100%;
+  transition: width 0.1s linear;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.timer-control {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.timer-control label {
+  font-weight: 300;
+  color: #999;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.timer-input {
+  width: 80px;
+  padding: 10px;
+  border: 1px solid #333;
+  background: #0a0a0a;
+  color: #ffffff;
+  font-size: 14px;
+  font-family: inherit;
+  text-align: center;
+}
+
+.timer-input:focus {
+  outline: none;
+  border-color: #666;
+}
+
+.control-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.start-button,
+.pause-button,
+.reset-button,
+.new-key-button {
+  padding: 12px 24px;
+  font-size: 12px;
+  font-weight: 400;
+  border: 1px solid #333;
+  background: transparent;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: inherit;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.start-button {
+  border-color: #ffffff;
+}
+
+.start-button:hover,
+.pause-button:hover,
+.reset-button:hover,
+.new-key-button:hover {
+  background: #ffffff;
+  color: #000000;
+  border-color: #ffffff;
+}
+
+.pause-button.active {
+  background: #ffffff;
+  color: #000000;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+.pulse {
+  animation: pulse 0.5s ease;
+}
+
+@media (max-width: 768px) {
+  .chord-sequence {
+    gap: 15px;
+  }
+  
+  .chord-name {
+    font-size: 35px;
+  }
+  
+  .timer-display {
+    font-size: 36px;
+  }
+  
+  .control-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .start-button,
+  .pause-button,
+  .reset-button,
+  .new-key-button {
+    width: 100%;
+  }
+}

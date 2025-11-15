@@ -1,0 +1,149 @@
+.app {
+  background: #111111;
+  border: 1px solid #2a2a2a;
+  padding: 40px;
+  max-width: 1200px;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.app-header h1 {
+  color: #ffffff;
+  margin-bottom: 10px;
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 300;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.app-header h1::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #ffffff, transparent);
+}
+
+.subtitle {
+  color: #666;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 10px;
+}
+
+.exercise-nav {
+  display: flex;
+  gap: 0;
+  margin-bottom: 40px;
+  border: 1px solid #333;
+  background: #0a0a0a;
+}
+
+.nav-button {
+  flex: 1;
+  padding: 15px 20px;
+  background: transparent;
+  color: #666;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: inherit;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.nav-button:not(:last-child) {
+  border-right: 1px solid #333;
+}
+
+.nav-button:hover {
+  background: #1a1a1a;
+  color: #999;
+}
+
+.nav-button.active {
+  background: #ffffff;
+  color: #000000;
+  font-weight: 600;
+}
+
+.nav-icon {
+  font-size: 14px;
+}
+
+.nav-text {
+  display: inline;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.editor-section {
+  background: #0a0a0a;
+  border: 1px solid #333;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.editor-toggle {
+  width: 100%;
+  padding: 12px 24px;
+  font-size: 12px;
+  font-weight: 400;
+  border: 1px solid #333;
+  background: transparent;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: inherit;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.editor-toggle:hover {
+  background: #ffffff;
+  color: #000000;
+  border-color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .app {
+    padding: 20px;
+  }
+
+  .app-header h1 {
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
+  
+  .nav-button {
+    padding: 12px 15px;
+    font-size: 10px;
+  }
+  
+  .nav-text {
+    display: none;
+  }
+}
+

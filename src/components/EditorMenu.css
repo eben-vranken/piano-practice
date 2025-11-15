@@ -1,0 +1,64 @@
+.editor-menu {
+  margin-top: 20px;
+}
+
+.editor-actions {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.download-button,
+.upload-button,
+.reset-button {
+  padding: 12px 24px;
+  font-size: 12px;
+  font-weight: 400;
+  border: 1px solid #333;
+  background: transparent;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: inherit;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.download-button:hover,
+.upload-button:hover,
+.reset-button:hover {
+  background: #ffffff;
+  color: #000000;
+  border-color: #ffffff;
+}
+
+.upload-button {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.editor-info {
+  color: #666;
+  font-size: 11px;
+  line-height: 1.6;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.editor-info .warning {
+  color: #999;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .editor-actions {
+    flex-direction: column;
+  }
+  
+  .download-button,
+  .upload-button,
+  .reset-button {
+    width: 100%;
+  }
+}

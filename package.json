@@ -1,0 +1,35 @@
+{
+  "name": "piano-improvisation-practice",
+  "version": "1.0.0",
+  "description": "A comprehensive web-based training tool for piano improvisation",
+  "private": true,
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1"
+  },
+  "scripts": {
+    "start": "NODE_OPTIONS='--localstorage-file=/tmp/.localstorage' react-scripts start",
+    "build": "NODE_OPTIONS='--localstorage-file=/tmp/.localstorage' react-scripts build",
+    "test": "NODE_OPTIONS='--localstorage-file=/tmp/.localstorage' react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
+

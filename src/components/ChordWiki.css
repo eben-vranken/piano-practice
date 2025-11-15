@@ -1,0 +1,165 @@
+.chord-wiki {
+  width: 100%;
+}
+
+.chord-wiki-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.chord-wiki-header h2 {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 300;
+}
+
+.chord-wiki-controls {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.search-input {
+  padding: 10px;
+  border: 1px solid #333;
+  background: #0a0a0a;
+  color: #ffffff;
+  font-size: 14px;
+  font-family: inherit;
+  min-width: 200px;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #666;
+}
+
+.add-button {
+  padding: 12px 24px;
+  font-size: 12px;
+  font-weight: 400;
+  border: 1px solid #333;
+  background: transparent;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: inherit;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.add-button:hover {
+  background: #ffffff;
+  color: #000000;
+  border-color: #ffffff;
+}
+
+.chords-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.chord-card {
+  background: #0a0a0a;
+  border: 1px solid #2a2a2a;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.chord-card:hover {
+  border-color: #333;
+}
+
+.chord-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.chord-header h3 {
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.chord-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.edit-button,
+.delete-button {
+  padding: 8px 16px;
+  border: 1px solid #333;
+  background: transparent;
+  color: #666;
+  cursor: pointer;
+  font-size: 11px;
+  transition: all 0.3s ease;
+  font-family: inherit;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.edit-button:hover,
+.delete-button:hover {
+  background: #ffffff;
+  color: #000000;
+  border-color: #ffffff;
+}
+
+.custom-badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: #333;
+  color: #999;
+  padding: 4px 8px;
+  border: 1px solid #333;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.chord-notes {
+  margin-bottom: 15px;
+  color: #666;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.chord-notes strong {
+  color: #999;
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .chord-wiki-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .chord-wiki-controls {
+    flex-direction: column;
+  }
+  
+  .search-input {
+    width: 100%;
+  }
+  
+  .chords-grid {
+    grid-template-columns: 1fr;
+  }
+}

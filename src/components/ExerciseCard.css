@@ -1,0 +1,18 @@
+.exercise-card {
+  width: 100%;
+  background: transparent;
+  border: none;
+  overflow: visible;
+}
+
+.card-content {
+  padding: 0;
+  min-height: auto;
+}
+
+@media (max-width: 768px) {
+  .card-content {
+    padding: 0;
+    min-height: auto;
+  }
+}
